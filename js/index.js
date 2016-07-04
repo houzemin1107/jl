@@ -8,13 +8,6 @@ var sound = getEle("#sound");
 var song = getEle("#song");
 var winW = document.documentElement.clientWidth;
 var winH = document.documentElement.clientHeight;
-//var desW = 640;
-//var desH = 960;
-//if (winW / winH <= desW / desH) {
-//    main.style.webkitTransform = "scale(" + winH / desH + ")";
-//} else {
-//    main.style.webkitTransform = "scale(" + winW / desW + ")";
-//}
 song.play();
 sound.addEventListener("touchstart", function (e) {
     if (this.className) {
@@ -27,7 +20,6 @@ sound.addEventListener("touchstart", function (e) {
 }, false);
 
 [].forEach.call(oLis, function () {
-    //第一个当前项，第二个当前项索引，第三个当前类数组
     arguments[0].index = arguments[1];
     arguments[0].addEventListener("touchstart", start, false);
     arguments[0].addEventListener("touchmove", move, false);
@@ -61,8 +53,6 @@ function move(e){
         oLis[this.prevsIndex].className = "index";
         oLis[this.prevsIndex].style.display = "block";
         oLis[this.prevsIndex].style.webkitTransform = "translate(0,"+pos+"px)";
-        //this.style.webkitTransform = "scale("+(1-Math.abs(movePos)/winH*1/2)+") " +
-        //    " translate(0,"+movePos+"px)";
     }
 
 }

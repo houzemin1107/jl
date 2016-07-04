@@ -1,14 +1,9 @@
 @charset "utf-8";
 * {
-    /*-webkit-tap-highlight-color: rgba(0, 0, 0, 0);*/
-    /*-webkit-touch-callout: none;*/
-    /*-webkit-text-size-adjust: 100%;*/
-    /*-webkit-user-select: none;*/
     margin: 0;
     padding: 0;
     font-family: "\5FAE\8F6F\96C5\9ED1", Helvetica, sans-serif;
     font-size: 20px;
-    /*font-size: 12px;*/
 }
 ul,li{
     list-style: none;
@@ -22,9 +17,6 @@ html, body {
     width: 100%;
     height: 100%;
     position: absolute;
-    /*left: 50%;*/
-    /*top: 0;*/
-    /*margin-left: -320px;*/
     transform-origin: top;
     -webkit-transform-origin: top;
     overflow: hidden;
@@ -41,8 +33,6 @@ html, body {
     right: 1%;
     width:25px;
     height: 25px;
-    /*border-radius: 50%;*/
-    /*border: 1px solid black;*/
     z-index: 10;
 }
 .sing{
@@ -53,7 +43,6 @@ html, body {
     width: 100%;
     height: 100%;
     position: absolute;
-    /*background: lightgoldenrodyellow;*/
     background-image: url("../img/bg.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -74,13 +63,13 @@ html, body {
     width: 100%;
     height: 100%;
 }
-.oneD{
+.one{
     position: absolute;
     top: 295px;
     margin-top: 200px;
     overflow: hidden;
 }
-.oneD p{
+.one p{
     font-size: 32px;
     font-weight: bold;
     color: #312E2D;
@@ -89,48 +78,19 @@ html, body {
     width: 100%;
     height: 30px;
 }
-.oneD p:nth-child(1){
+.one p:nth-child(1){
     -webkit-transform: translate(500px,0);
     transform:translate(500px,0);
     left: 50%;
     margin-left: -25%;
     top: 18px;
 }
-.oneD p:nth-child(2){
+.one p:nth-child(2){
     top: 100px;
     -webkit-transform: translate(-500px, 0);
     transform: translate(-500px, 0);
 }
-.load{
-    position: absolute;
-    top: 600px;
-    left: 250px;
-    width: 550px;
-    height: 550px;
-    animation: touch 8s infinite linear;
-    -webkit-animation: touch 8s infinite linear;
-}
-@keyframes touch {
-    0% {
-        -webkit-transform: rotate(0deg);
-    }
-    100% {
-        -webkit-transform: rotate(360deg);
-    }
-}
-@-webkit-keyframes touch {
-    0% {
-        -webkit-transform: rotate(0deg);
-    }
-    100% {
-        -webkit-transform: rotate(360deg);
-    }
-}
-.load img{
-    width: 100%;
-    height: 100%;
-}
-#d1 .oneD p{
+#d1 .one p{
     -webkit-transform: translate(0, 0);
     transform: translate(0, 0);
     -webkit-transition: 0.5s ease-out;
